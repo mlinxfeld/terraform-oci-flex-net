@@ -14,7 +14,7 @@ With the usage of this example HCL code you can build topology documented by dia
 
 ### STEP 1.
 
-Clone the repo from github by executing the command as follows and then go to terraform-oci-flex-compute directory:
+Clone the repo from github by executing the command as follows and then go to terraform-oci-flex-net directory:
 
 ```
 [opc@terraform-server ~]$ git clone https://github.com/mlinxfeld/terraform-oci-flex-net.git
@@ -144,7 +144,7 @@ Apply complete! Resources: 13 added, 0 changed, 0 destroyed.
 After testing the environment you can remove the whole OCI infra. You should just run *terraform destroy* (type **yes** for confirmation of the destroy phase):
 
 ```
-[opc@terraform-server terraform-oci-flex-compute]$ terraform destroy
+[opc@terraform-server terraform-oci-flex-net]$ terraform destroy
 
 oci_identity_compartment.FoggyKitchenCompartment: Refreshing state... [id=ocid1.compartment.oc1..aaaaaaaagillnk7ttj6wpdhmewpibpxc5gbmrfxdtmaa3gfgjzbudesm3tsq]
 oci_core_virtual_network.FoggyKitchenVCN: Refreshing state... [id=ocid1.vcn.oc1.eu-frankfurt-1.amaaaaaadngk4gialu6ikx45brprlpzi2oyibbsl6slts36bar4vgcjlmgjq]
